@@ -79,10 +79,10 @@ app.patch('/room/:roomID', (req, res) => {
 })
 
 app.post('/user', (req, res) => {
-    User.create({
-        email: req.body.email
+    User.findOrCreate({
+        where: {email: req.body.email}
     })
-    .then(user => res.send(user))
+    .then(user => res.send(user[0]))
     .catch(err => res.send(err));
 })
 
