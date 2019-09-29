@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/hcook99/FRR-RamHacks2019#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "moment": "^2.24.0",
+    "mongodb": "^3.3.2",
+    "pg": "^7.12.1",
+    "sequelize": "^5.19.1"
   }
 }
