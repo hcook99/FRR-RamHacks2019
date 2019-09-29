@@ -39,8 +39,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText"
-        app:srcCompat="@drawable/loginn"
-        tools:layout_editor_absoluteX="99dp" />
+        app:srcCompat="@drawable/loginn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
