@@ -148,6 +148,21 @@ app.get('/myRooms/:userId', (req, res) => {
     .catch(err => res.status(400).send(err))
 })
 
+app.delete('/reserve/:reserveID', (req, res)=>{
+    RoomReserve.destroy({
+        where: {id: req.params.reserveID}
+    })
+    .then(numDeleted=> {
+        if(numDeleted==1){
+            res.sendStatus(200);
+        }
+        else{
+            res.sendStatus(400);
+        }
+    })
+    .catch(err => res.send(err));
+})
+
 app.get('/openRooms/:date', (req, res) => {
     Room.findAll({
         include: [{
