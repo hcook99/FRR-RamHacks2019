@@ -25,10 +25,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
-        android:layout_marginBottom="420dp"
+        android:layout_marginTop="48dp"
+        android:width="280sp"
         android:ems="10"
         android:inputType="textEmailAddress"
         android:textColor="#F5F6FA"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageButton
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:srcCompat="@drawable/loginn"
+        tools:layout_editor_absoluteX="99dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
